@@ -6,6 +6,8 @@
 
 		<style>
 			.default {
+				padding: 0px;
+				margin: 0px;
 				background-color:#4c544e;
 				font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
 				font-size:14px;
@@ -19,12 +21,25 @@
 				position:relative;
 			}
 
+			.header {
+				width:100%;
+				background-color: #3a413b;
+				padding: 15px 5px 5px 5px;
+			}
+
+			.logo {
+				width:80px;
+				display:block;
+				opacity: 0.7;
+			}
+
 			.symbol {
 				width:192px;
 				border:1px solid #3b4e3d;
 				border-radius:30px;
 				display:block;
 				margin:auto;
+				margin-top: 20px;
 			}
 
 			.youtube {
@@ -32,6 +47,7 @@
 				margin:auto;
 				border: 0px;
 				width:420px;
+				margin-bottom: 40px;
 			}
 
 			.download {
@@ -75,10 +91,6 @@
 				width: auto;
 			}
 
-			.logo {
-
-			}
-
 			.contact {
 				width:192px;
 				display:block;
@@ -92,7 +104,7 @@
 			@media ( max-width: 1000px ) {
 				.youtube {
 					border: 0px;
-					width: 240px;
+					width: 180px;
 				}
 
 				.download {
@@ -112,25 +124,29 @@
 			}
 		</style>
 	</head>
+
 	<body class="default">
-		<div class="container spacer">
+		<div class="header">
+			<img src="logo_meteo.png" class="logo" />
+		</div>
+		<div class="container">
 			<img src="icon_launcher.png" class="symbol" />
 			<ul class="download spacer">
 				<li >
 					<span>1.0.14<br/>Release</span>
 				</li>
 				<li class="separator">
-					<a href="#">
+					<a href="https://itunes.apple.com/us/app/alter-dogma/id1316863480&ls=1&mt=8" target="_blank">
 							<img src="dl_ios.png"/>
 					</a>
 				</li>
 				<li class="separator">
-					<a href="#">
+					<a href="https://play.google.com/store/apps/details?id=com.MeteoGames.AlterDogma" target="_blank">
 							<img src="dl_android.png"/>
 					</a>
 				</li>
 			</ul>
-			<a href="#" class="contact">
+			<a href="mailto:meteogames2017@gmail.com" class="contact">
 					Contact us
 			</a>
 
