@@ -2,8 +2,135 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=divice-width, initial-scale=1">
+
+		<style>
+			.default {
+				background-color:#4c544e;
+				font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+			}
+
+			.container {
+				display:block;
+				margin:auto;
+				width:50%;
+				padding-top:80px;
+				position:relative;
+			}
+
+			.symbol {
+				width:192px;
+				border:1px solid #3b4e3d;
+				border-radius:30px;
+				display:block;
+				margin:auto;
+			}
+
+			.youtube {
+				border: 0px;
+				width:420px;
+				display:block;
+				margin:auto;
+			}
+
+			.download {
+				list-style:none;
+				display: flex;
+				/* display: inline-flex; */
+				/* flex-direction: row; */
+				width:480px;
+				padding:0px;
+				border: 2px solid #746c5d;
+				border-radius:7px;
+				margin-left: auto;
+				margin-right: auto;
+
+				flex:1;
+			}
+
+			.download li {
+				display: inline;
+				width:160px;
+				text-align:center;
+				padding:8px 10px;
+			}
+
+			.separator {
+				border-top: 0px solid #746c5d;
+				border-left: 2px solid #746c5d;
+			}
+
+			.spacer {
+				margin-top: 40px;
+			}
+
+			.download li img {
+				height: 40px;
+				width: auto;
+			}
+
+			.logo {
+
+			}
+
+			.contact {
+				width:192px;
+				display:block;
+				text-decoration:none;
+				text-align: center;
+				color:#cad2a9;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			@media ( max-width: 1000px ) {
+				.youtube {
+					border: 0px;
+					width: 240px;
+				}
+
+				.download {
+					width: 180px;
+					flex-direction: column;
+				}
+
+				.download li img {
+					height: auto;
+					width: 140px;
+				}
+
+				.separator {
+					border-top: 2px solid #746c5d;
+					border-left: 0px solid #746c5d;
+				}
+			}
+		</style>
 	</head>
-	<body>
-		Hello, World!
+	<body class="default">
+		<div class="container">
+			<img src="Icon_Launcher_round.png" class="symbol" />
+
+			<iframe class="youtube spacer" src="https://youtu.be/sC34goTVGBA"></iframe>
+
+			<ul class="download spacer">
+				<li >
+					<span style="font-size:14px; color:#f2caa9;">1.0.14<br/>Release</span>
+				</li>
+				<li class="separator">
+					<a href="#" style="display:block; text-decoration:none;">
+							<img src="dl_ios.png"/>
+					</a>
+				</li>
+				<li class="separator">
+					<a href="#" style="display:block; text-decoration:none;">
+							<img src="dl_android.png"/>
+					</a>
+				</li>
+			</ul>
+			<a href="#" class="contact">
+					Contact us
+			</a>
+
+		</div>
 	</body>
 </html>
